@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reportStudents" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="57cb14e8-a154-4128-8b2e-c4dace110164">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from alumnos]]>
+	</queryString>
+	<field name="Id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Dni" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Nombre" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Apellido 1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Apellido 2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="Id">
+		<groupExpression><![CDATA[$F{Id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="572" height="64" forecolor="#FFFFFF" backcolor="#806A6A" uuid="518cb6fe-8e6b-48f9-95ef-731aae871161"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Biblioteca]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="48" width="572" height="31" forecolor="#FFFFFF" backcolor="#806A6A" uuid="8681c1fd-aacc-4406-a03e-e73df75e2e4a"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IES El Rincón]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="572" height="35" forecolor="#FFFFFF" backcolor="#566066" uuid="068c98ea-c771-4ed4-92fa-a58d46ec36f8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Estudiantes]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="26" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="114" height="20" uuid="6d4eb93c-e138-477c-adb5-9dc2dd3061c5"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#393964"/>
+					<leftPen lineWidth="0.5" lineColor="#393964"/>
+					<bottomPen lineWidth="0.5" lineColor="#393964"/>
+					<rightPen lineWidth="0.5" lineColor="#393964"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="114" y="0" width="114" height="20" uuid="a13b5442-aecc-4ef3-b1ee-4252ba7a3ea1"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#393964"/>
+					<leftPen lineWidth="0.5" lineColor="#393964"/>
+					<bottomPen lineWidth="0.5" lineColor="#393964"/>
+					<rightPen lineWidth="0.5" lineColor="#393964"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Dni]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="228" y="0" width="114" height="20" uuid="1c476fa2-1f5f-46bf-806a-49d3074cd9b3"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#393964"/>
+					<leftPen lineWidth="0.5" lineColor="#393964"/>
+					<bottomPen lineWidth="0.5" lineColor="#393964"/>
+					<rightPen lineWidth="0.5" lineColor="#393964"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Nombre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="342" y="0" width="114" height="20" uuid="51592af8-b16f-4b3d-ae28-365de091cc4a"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#393964"/>
+					<leftPen lineWidth="0.5" lineColor="#393964"/>
+					<bottomPen lineWidth="0.5" lineColor="#393964"/>
+					<rightPen lineWidth="0.5" lineColor="#393964"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[P. Apellido]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="456" y="0" width="116" height="20" uuid="10519e0e-080b-451e-8bda-8b067c6b2b71"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#393964"/>
+					<leftPen lineWidth="0.5" lineColor="#393964"/>
+					<bottomPen lineWidth="0.5" lineColor="#393964"/>
+					<rightPen lineWidth="0.5" lineColor="#393964"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[S. Apellido]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="44" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="21" width="114" height="20" uuid="e1de4a40-ff13-4801-90eb-faa679ad120f"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="114" y="21" width="114" height="20" uuid="e285ab5f-4421-445a-9f10-9718b7bb6107"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Dni}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="228" y="21" width="116" height="20" uuid="00200c6b-0f26-4c75-ab2c-19f50a27bdeb"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="344" y="21" width="114" height="20" uuid="86d43a5d-9c9a-4197-aa04-045a7e43a258"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Apellido 1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="458" y="21" width="114" height="20" uuid="d14c1697-8221-424f-9069-5947962c49cd"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Apellido 2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="38" splitType="Stretch">
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="0" y="17" width="100" height="20" uuid="475e86b0-d2c3-408e-aa67-15aeb6a92aa9"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="458" y="17" width="80" height="20" uuid="affe9862-fa86-4805-ad39-fdf92e322378"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="538" y="17" width="40" height="20" uuid="f6742908-8de6-49dd-9307-ac92c5f43e72"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

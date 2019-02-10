@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reportBooks" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cec216ef-3ed4-42a6-8f88-a2a07eda4662">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from libros]]>
+	</queryString>
+	<field name="Codigo" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Titulo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Autor" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Editorial" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Asignatura" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Estado" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="Codigo">
+		<groupExpression><![CDATA[$F{Codigo}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="572" height="64" forecolor="#FFFFFF" backcolor="#806A6A" uuid="6bf61e4a-6954-4dbe-b784-51d1ef845bba"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+                                    <font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Biblioteca]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="48" width="572" height="31" forecolor="#FFFFFF" backcolor="#806A6A" uuid="98385860-8efa-4501-bab4-1c9abf33019f"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+                                    <font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IES El Rincón]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="572" height="35" forecolor="#FFFFFF" backcolor="#566066" uuid="45df32bc-9985-4970-b544-9f6cafe291c8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+                                    <font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Libros]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="285" y="0" width="95" height="20" uuid="d60d848d-cffa-4179-863a-36abb1e381f5"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#393964"/>
+					<leftPen lineWidth="0.5" lineColor="#393964"/>
+					<bottomPen lineWidth="0.5" lineColor="#393964"/>
+					<rightPen lineWidth="0.5" lineColor="#393964"/>
+				</box>
+				<textElement textAlignment="Center">
+                                    <font size="12"/>
+				</textElement>
+				<text><![CDATA[Editorial]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="95" y="0" width="95" height="20" uuid="467f6ec5-d3fb-4717-851b-6c9ca5d08e6a"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#393964"/>
+					<leftPen lineWidth="0.5" lineColor="#393964"/>
+					<bottomPen lineWidth="0.5" lineColor="#393964"/>
+					<rightPen lineWidth="0.5" lineColor="#393964"/>
+				</box>
+				<textElement textAlignment="Center">
+                                    <font size="12"/>
+				</textElement>
+				<text><![CDATA[Título]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="0" width="95" height="20" uuid="9001ea07-325e-4e8c-a35b-b361b2f52974"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#393964"/>
+					<leftPen lineWidth="0.5" lineColor="#393964"/>
+					<bottomPen lineWidth="0.5" lineColor="#393964"/>
+					<rightPen lineWidth="0.5" lineColor="#393964"/>
+				</box>
+				<textElement textAlignment="Center">
+                                    <font size="12"/>
+				</textElement>
+				<text><![CDATA[Asignatura]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="95" height="20" uuid="2d8a811d-cfec-4a5d-97e0-a0e1c3e29b0a"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#393964"/>
+					<leftPen lineWidth="0.5" lineColor="#393964"/>
+					<bottomPen lineWidth="0.5" lineColor="#393964"/>
+					<rightPen lineWidth="0.5" lineColor="#393964"/>
+				</box>
+				<textElement textAlignment="Center">
+                                    <font size="12"/>
+				</textElement>
+				<text><![CDATA[Código]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="0" width="95" height="20" uuid="9405ddbc-b78b-4c6f-8355-d3b252e9cac5"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#393964"/>
+					<leftPen lineWidth="0.5" lineColor="#393964"/>
+					<bottomPen lineWidth="0.5" lineColor="#393964"/>
+					<rightPen lineWidth="0.5" lineColor="#393964"/>
+				</box>
+				<textElement textAlignment="Center">
+                                    <font size="12"/>
+				</textElement>
+				<text><![CDATA[Autor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="475" y="0" width="97" height="20" uuid="04b35c62-d6f3-4807-ae96-b475d59a3cfa"/>
+				<box>
+					<topPen lineWidth="0.5" lineColor="#393964"/>
+					<leftPen lineWidth="0.5" lineColor="#393964"/>
+					<bottomPen lineWidth="0.5" lineColor="#393964"/>
+					<rightPen lineWidth="0.5" lineColor="#393964"/>
+				</box>
+				<textElement textAlignment="Center">
+                                    <font size="12"/>
+				</textElement>
+				<text><![CDATA[Estado]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="43" splitType="Stretch">
+			<textField>
+				<reportElement x="95" y="21" width="95" height="20" uuid="656540f9-41d7-4a94-af6f-e260633df0fa"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Titulo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="285" y="21" width="95" height="20" uuid="cf7b404d-880c-44ba-98d8-79d49518c9b3"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Editorial}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="21" width="95" height="20" uuid="3bfcce1a-6fe8-4803-8446-6004fbda78c5"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Autor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="21" width="95" height="20" uuid="32f8730f-1ac3-407b-8b6f-bda0c5951536"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Codigo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="21" width="95" height="20" uuid="ba865fa8-fc88-4edb-8351-059ab8a8cda1"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Asignatura}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="475" y="21" width="97" height="20" uuid="14128792-84e6-45c5-bc8d-1eae5878baaa"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center">
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Estado}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="32" splitType="Stretch">
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="0" y="12" width="100" height="20" uuid="2fb6f2d5-6222-4d71-b333-e4df11c66083"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="462" y="12" width="80" height="20" uuid="f975d0be-3130-4ec2-bd4b-a6f1b07fbbc3"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="542" y="12" width="40" height="20" uuid="e3b6df81-7664-46a3-8b38-059bad6d1983"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>
